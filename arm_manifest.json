@@ -1,0 +1,61 @@
+{
+  "arm_version": "1.1",
+  "paper": {
+    "title": "阅读01｜文献文档解析",
+    "challenge_id": "product-arena-08-3027d350"
+  },
+  "entrypoint": "src/reproduce.py",
+  "environment": {
+    "dependencies": "requirements.txt",
+    "gpu_required": false,
+    "python_version": "3.12"
+  },
+  "execution": {
+    "log_path": "results/run.log",
+    "exit_code": 0,
+    "ran_at": "2026-11-27T02:42:18.777943Z",
+    "wall_time_s": 0.594,
+    "artifacts": [
+      {
+        "id": "reading_order",
+        "path": "results/reading_order.json",
+        "type": "data",
+        "format": "json"
+      },
+      {
+        "id": "layout_checks",
+        "path": "results/checks.json",
+        "type": "data",
+        "format": "json"
+      },
+      {
+        "id": "run_log",
+        "path": "results/run.log",
+        "type": "log",
+        "format": "txt"
+      }
+    ]
+  },
+  "expected_outputs": [
+    {
+      "name": "reading_order",
+      "type": "data",
+      "produced_by": [
+        "reading_order"
+      ],
+      "comparison_method": "exact_match"
+    },
+    {
+      "name": "layout_checks",
+      "type": "metric",
+      "produced_by": [
+        "layout_checks"
+      ],
+      "comparison_method": "exact_match"
+    }
+  ],
+  "characterization": {
+    "path": "characterization.json"
+  },
+  "trace": "trace/trace.jsonl"
+}
