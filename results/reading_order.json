@@ -1,0 +1,488 @@
+{
+  "case_id": "synthetic-2col",
+  "skill": "pdf-column-reader",
+  "source": {
+    "path": "sample\\synthetic-2col.pdf",
+    "sha256": "41714e4c25250db298d1fb9293ed95a837785a678a77ee8fb1e7d7b2c1cbb1e4",
+    "pages": 3,
+    "bytes": 6455
+  },
+  "status": "success",
+  "layout": {
+    "header_band": 0.075,
+    "footer_band": 0.925,
+    "max_columns": 3,
+    "page_columns": {
+      "1": 2,
+      "2": 2,
+      "3": 1
+    }
+  },
+  "pages": [
+    {
+      "page": 1,
+      "size": [
+        595.0,
+        842.0
+      ],
+      "columns": 2,
+      "body_blocks": 11,
+      "furniture_blocks": 2,
+      "text_chars": 557
+    },
+    {
+      "page": 2,
+      "size": [
+        595.0,
+        842.0
+      ],
+      "columns": 2,
+      "body_blocks": 9,
+      "furniture_blocks": 2,
+      "text_chars": 246
+    },
+    {
+      "page": 3,
+      "size": [
+        595.0,
+        842.0
+      ],
+      "columns": 1,
+      "body_blocks": 3,
+      "furniture_blocks": 0,
+      "text_chars": 169
+    }
+  ],
+  "units": [
+    {
+      "unit_id": "p1-c-1-o0001",
+      "page": 1,
+      "column": -1,
+      "column_kind": "spanning",
+      "order": 1,
+      "role": "body",
+      "text": "A Two Column Paper About Reading Order",
+      "bbox_norm": [
+        0.1176,
+        0.1102,
+        0.6348,
+        0.1363
+      ]
+    },
+    {
+      "unit_id": "p1-c-1-o0002",
+      "page": 1,
+      "column": -1,
+      "column_kind": "spanning",
+      "order": 2,
+      "role": "body",
+      "text": "Abstract: this study checks whether column order survives extraction.",
+      "bbox_norm": [
+        0.1176,
+        0.1667,
+        0.5808,
+        0.1813
+      ]
+    },
+    {
+      "unit_id": "p1-c0-o0003",
+      "page": 1,
+      "column": 0,
+      "column_kind": "column",
+      "order": 3,
+      "role": "body",
+      "text": "The claim is that left column is read before right column.",
+      "bbox_norm": [
+        0.1176,
+        0.1845,
+        0.4926,
+        0.1992
+      ]
+    },
+    {
+      "unit_id": "p1-c0-o0004",
+      "page": 1,
+      "column": 0,
+      "column_kind": "column",
+      "order": 4,
+      "role": "body",
+      "text": "LEFT-1 alpha beta gamma delta epsilon zeta eta theta.",
+      "bbox_norm": [
+        0.1008,
+        0.2379,
+        0.4699,
+        0.2526
+      ]
+    },
+    {
+      "unit_id": "p1-c0-o0005",
+      "page": 1,
+      "column": 0,
+      "column_kind": "column",
+      "order": 5,
+      "role": "body",
+      "text": "LEFT-2 iota kappa lambda mu nu xi omicron pi rho.",
+      "bbox_norm": [
+        0.1008,
+        0.264,
+        0.4447,
+        0.2787
+      ]
+    },
+    {
+      "unit_id": "p1-c0-o0006",
+      "page": 1,
+      "column": 0,
+      "column_kind": "column",
+      "order": 6,
+      "role": "body",
+      "text": "LEFT-3 sigma tau upsilon phi chi psi omega alpha.",
+      "bbox_norm": [
+        0.1008,
+        0.2902,
+        0.4405,
+        0.3049
+      ]
+    },
+    {
+      "unit_id": "p1-c0-o0007",
+      "page": 1,
+      "column": 0,
+      "column_kind": "column",
+      "order": 7,
+      "role": "body",
+      "text": "LEFT-4 the left column ends here before the right starts.",
+      "bbox_norm": [
+        0.1008,
+        0.3163,
+        0.4766,
+        0.331
+      ]
+    },
+    {
+      "unit_id": "p1-c1-o0008",
+      "page": 1,
+      "column": 1,
+      "column_kind": "column",
+      "order": 8,
+      "role": "body",
+      "text": "RIGHT-1 one two three four five six seven eight.",
+      "bbox_norm": [
+        0.5378,
+        0.2379,
+        0.8606,
+        0.2526
+      ]
+    },
+    {
+      "unit_id": "p1-c1-o0009",
+      "page": 1,
+      "column": 1,
+      "column_kind": "column",
+      "order": 9,
+      "role": "body",
+      "text": "RIGHT-2 nine ten eleven twelve thirteen fourteen.",
+      "bbox_norm": [
+        0.5378,
+        0.264,
+        0.8707,
+        0.2787
+      ]
+    },
+    {
+      "unit_id": "p1-c1-o0010",
+      "page": 1,
+      "column": 1,
+      "column_kind": "column",
+      "order": 10,
+      "role": "body",
+      "text": "RIGHT-3 fifteen sixteen seventeen eighteen nineteen.",
+      "bbox_norm": [
+        0.5378,
+        0.2902,
+        0.8985,
+        0.3049
+      ]
+    },
+    {
+      "unit_id": "p1-c1-o0011",
+      "page": 1,
+      "column": 1,
+      "column_kind": "column",
+      "order": 11,
+      "role": "body",
+      "text": "RIGHT-4 the right column ends here.",
+      "bbox_norm": [
+        0.5378,
+        0.3163,
+        0.7858,
+        0.331
+      ]
+    },
+    {
+      "unit_id": "p1-f-0011",
+      "page": 1,
+      "column": -1,
+      "column_kind": "furniture",
+      "order": null,
+      "role": "header",
+      "text": "Journal of Reproducible Layouts 12 (2026) 1-3",
+      "bbox_norm": [
+        0.1008,
+        0.0386,
+        0.3434,
+        0.05
+      ]
+    },
+    {
+      "unit_id": "p1-f-0012",
+      "page": 1,
+      "column": -1,
+      "column_kind": "furniture",
+      "order": null,
+      "role": "footer",
+      "text": "1",
+      "bbox_norm": [
+        0.5042,
+        0.9399,
+        0.5117,
+        0.953
+      ]
+    },
+    {
+      "unit_id": "p2-c0-o0012",
+      "page": 2,
+      "column": 0,
+      "column_kind": "column",
+      "order": 12,
+      "role": "body",
+      "text": "LEFT-5 before the figure.",
+      "bbox_norm": [
+        0.1008,
+        0.0954,
+        0.2698,
+        0.1101
+      ]
+    },
+    {
+      "unit_id": "p2-c0-o0013",
+      "page": 2,
+      "column": 0,
+      "column_kind": "column",
+      "order": 13,
+      "role": "body",
+      "text": "LEFT-6 still left column.",
+      "bbox_norm": [
+        0.1008,
+        0.1215,
+        0.2589,
+        0.1362
+      ]
+    },
+    {
+      "unit_id": "p2-c1-o0014",
+      "page": 2,
+      "column": 1,
+      "column_kind": "column",
+      "order": 14,
+      "role": "body",
+      "text": "RIGHT-5 before the figure.",
+      "bbox_norm": [
+        0.5378,
+        0.0954,
+        0.7169,
+        0.1101
+      ]
+    },
+    {
+      "unit_id": "p2-c1-o0015",
+      "page": 2,
+      "column": 1,
+      "column_kind": "column",
+      "order": 15,
+      "role": "body",
+      "text": "RIGHT-6 still right column.",
+      "bbox_norm": [
+        0.5378,
+        0.1215,
+        0.7152,
+        0.1362
+      ]
+    },
+    {
+      "unit_id": "p2-c-1-o0016",
+      "page": 2,
+      "column": -1,
+      "column_kind": "spanning",
+      "order": 16,
+      "role": "body",
+      "text": "Figure 1: a wide figure caption spanning both columns.",
+      "bbox_norm": [
+        0.1513,
+        0.3804,
+        0.5178,
+        0.3951
+      ]
+    },
+    {
+      "unit_id": "p2-c0-o0017",
+      "page": 2,
+      "column": 0,
+      "column_kind": "column",
+      "order": 17,
+      "role": "body",
+      "text": "LEFT-7 after the figure.",
+      "bbox_norm": [
+        0.1008,
+        0.4636,
+        0.2572,
+        0.4783
+      ]
+    },
+    {
+      "unit_id": "p2-c0-o0018",
+      "page": 2,
+      "column": 0,
+      "column_kind": "column",
+      "order": 18,
+      "role": "body",
+      "text": "LEFT-8 end of left.",
+      "bbox_norm": [
+        0.1008,
+        0.4897,
+        0.2261,
+        0.5044
+      ]
+    },
+    {
+      "unit_id": "p2-c1-o0019",
+      "page": 2,
+      "column": 1,
+      "column_kind": "column",
+      "order": 19,
+      "role": "body",
+      "text": "RIGHT-7 after the figure.",
+      "bbox_norm": [
+        0.5378,
+        0.4636,
+        0.7043,
+        0.4783
+      ]
+    },
+    {
+      "unit_id": "p2-c1-o0020",
+      "page": 2,
+      "column": 1,
+      "column_kind": "column",
+      "order": 20,
+      "role": "body",
+      "text": "RIGHT-8 end of right.",
+      "bbox_norm": [
+        0.5378,
+        0.4897,
+        0.6824,
+        0.5044
+      ]
+    },
+    {
+      "unit_id": "p2-f-0022",
+      "page": 2,
+      "column": -1,
+      "column_kind": "furniture",
+      "order": null,
+      "role": "header",
+      "text": "Journal of Reproducible Layouts 12 (2026) 1-3",
+      "bbox_norm": [
+        0.1008,
+        0.0386,
+        0.3434,
+        0.05
+      ]
+    },
+    {
+      "unit_id": "p2-f-0023",
+      "page": 2,
+      "column": -1,
+      "column_kind": "furniture",
+      "order": null,
+      "role": "footer",
+      "text": "2",
+      "bbox_norm": [
+        0.5042,
+        0.9399,
+        0.5117,
+        0.953
+      ]
+    },
+    {
+      "unit_id": "p3-c0-o0021",
+      "page": 3,
+      "column": 0,
+      "column_kind": "column",
+      "order": 21,
+      "role": "body",
+      "text": "SINGLE-1 a single column page must stay in vertical order.",
+      "bbox_norm": [
+        0.1008,
+        0.1073,
+        0.4976,
+        0.122
+      ]
+    },
+    {
+      "unit_id": "p3-c0-o0022",
+      "page": 3,
+      "column": 0,
+      "column_kind": "column",
+      "order": 22,
+      "role": "body",
+      "text": "SINGLE-2 no gutter here so no column split should happen.",
+      "bbox_norm": [
+        0.1008,
+        0.1334,
+        0.501,
+        0.1481
+      ]
+    },
+    {
+      "unit_id": "p3-c0-o0023",
+      "page": 3,
+      "column": 0,
+      "column_kind": "column",
+      "order": 23,
+      "role": "body",
+      "text": "SINGLE-3 this is the last line of the synthetic paper.",
+      "bbox_norm": [
+        0.1008,
+        0.1595,
+        0.4464,
+        0.1742
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "page": 1,
+      "role": "header",
+      "text": "Journal of Reproducible Layouts 12 (2026) 1-3"
+    },
+    {
+      "page": 1,
+      "role": "footer",
+      "text": "1"
+    },
+    {
+      "page": 2,
+      "role": "header",
+      "text": "Journal of Reproducible Layouts 12 (2026) 1-3"
+    },
+    {
+      "page": 2,
+      "role": "footer",
+      "text": "2"
+    }
+  ],
+  "warnings": [],
+  "uncertainty": [],
+  "reading_order_text": "A Two Column Paper About Reading Order\nAbstract: this study checks whether column order survives extraction.\nThe claim is that left column is read before right column.\nLEFT-1 alpha beta gamma delta epsilon zeta eta theta.\nLEFT-2 iota kappa lambda mu nu xi omicron pi rho.\nLEFT-3 sigma tau upsilon phi chi psi omega alpha.\nLEFT-4 the left column ends here before the right starts.\nRIGHT-1 one two three four five six seven eight.\nRIGHT-2 nine ten eleven twelve thirteen fourteen.\nRIGHT-3 fifteen sixteen seventeen eighteen nineteen.\nRIGHT-4 the right column ends here.\nLEFT-5 before the figure.\nLEFT-6 still left column.\nRIGHT-5 before the figure.\nRIGHT-6 still right column.\nFigure 1: a wide figure caption spanning both columns.\nLEFT-7 after the figure.\nLEFT-8 end of left.\nRIGHT-7 after the figure.\nRIGHT-8 end of right.\nSINGLE-1 a single column page must stay in vertical order.\nSINGLE-2 no gutter here so no column split should happen.\nSINGLE-3 this is the last line of the synthetic paper."
+}
