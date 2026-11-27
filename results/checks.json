@@ -1,0 +1,88 @@
+{
+  "case_id": "synthetic-2col",
+  "status": "success",
+  "page_columns": {
+    "1": 2,
+    "2": 2,
+    "3": 1
+  },
+  "pages": {
+    "page1": {
+      "expected_order": [
+        "A Two Column Paper",
+        "Abstract:",
+        "The claim",
+        "LEFT-1",
+        "LEFT-2",
+        "LEFT-3",
+        "LEFT-4",
+        "RIGHT-1",
+        "RIGHT-2",
+        "RIGHT-3",
+        "RIGHT-4"
+      ],
+      "actual_order": [
+        "A Two Column Paper About Reading Order",
+        "Abstract: this study checks whether colu",
+        "The claim is that left column is read be",
+        "LEFT-1 alpha beta gamma delta epsilon ze",
+        "LEFT-2 iota kappa lambda mu nu xi omicro",
+        "LEFT-3 sigma tau upsilon phi chi psi ome",
+        "LEFT-4 the left column ends here before ",
+        "RIGHT-1 one two three four five six seve",
+        "RIGHT-2 nine ten eleven twelve thirteen ",
+        "RIGHT-3 fifteen sixteen seventeen eighte",
+        "RIGHT-4 the right column ends here."
+      ],
+      "exact_match": 1.0,
+      "units": 11
+    },
+    "page2": {
+      "expected_order": [
+        "LEFT-5",
+        "LEFT-6",
+        "RIGHT-5",
+        "RIGHT-6",
+        "Figure 1",
+        "LEFT-7",
+        "LEFT-8",
+        "RIGHT-7",
+        "RIGHT-8"
+      ],
+      "actual_order": [
+        "LEFT-5 before the figure.",
+        "LEFT-6 still left column.",
+        "RIGHT-5 before the figure.",
+        "RIGHT-6 still right column.",
+        "Figure 1: a wide figure caption spanning",
+        "LEFT-7 after the figure.",
+        "LEFT-8 end of left.",
+        "RIGHT-7 after the figure.",
+        "RIGHT-8 end of right."
+      ],
+      "exact_match": 1.0,
+      "units": 9
+    },
+    "page3": {
+      "expected_order": [
+        "SINGLE-1",
+        "SINGLE-2",
+        "SINGLE-3"
+      ],
+      "actual_order": [
+        "SINGLE-1 a single column page must stay ",
+        "SINGLE-2 no gutter here so no column spl",
+        "SINGLE-3 this is the last line of the sy"
+      ],
+      "exact_match": 1.0,
+      "units": 3
+    }
+  },
+  "overall_exact_match": 1.0,
+  "header_footer_excluded": 4,
+  "warnings": [],
+  "uncertainty": [],
+  "wall_time_s": 0.578,
+  "started_at": "2026-11-27T02:42:18.777943Z",
+  "total_wall_time_s": 0.594
+}
