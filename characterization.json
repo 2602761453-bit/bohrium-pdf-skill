@@ -1,0 +1,54 @@
+{
+  "deviations_from_paper": [
+    {
+      "target": "reading_order",
+      "metric": "exact_match",
+      "actual_value": 1.0,
+      "reference_value": 1.0,
+      "score": 1.0,
+      "note": "The reference is the sample PDF's own labels (LEFT-n / RIGHT-n / SINGLE-n), not a figure from a published paper: this is a skill-authoring challenge."
+    },
+    {
+      "target": "layout_checks",
+      "metric": "exact_match",
+      "actual_value": 1.0,
+      "reference_value": 1.0,
+      "score": 1.0,
+      "note": "Per-page sequence check on the same run; see results/checks.json."
+    }
+  ],
+  "envelope": [
+    {
+      "axis": "pages",
+      "covered": "3 (sample), 12 (arXiv 1512.03385 during development)",
+      "outside": "无验证：超长文档（>100 页）与竖排版面"
+    },
+    {
+      "axis": "layout",
+      "covered": "单栏、双栏、跨栏标题/摘要/图注",
+      "outside": "三栏以上仅按上限截断处理；边注与水印未做专门过滤"
+    },
+    {
+      "axis": "source",
+      "covered": "带文字层的 PDF",
+      "outside": "扫描件与图片型 PDF 不做 OCR，返回 partial/unreadable"
+    }
+  ],
+  "failure_modes": [
+    {
+      "mode": "扫描版或无文字层页面",
+      "impact": "该页 columns=0，被排除在阅读顺序之外，整体 status 降为 partial",
+      "evidence_artifact": "results/checks.json"
+    },
+    {
+      "mode": "图内文字（坐标轴刻度、图例）被当作正文块",
+      "impact": "可能排在图注之前，需要在后处理中按 bbox 剔除",
+      "evidence_artifact": "results/reading_order.json"
+    },
+    {
+      "mode": "通栏摘要实际宽度小于跨栏判定阈值",
+      "impact": "被标记为单栏块；阅读顺序不受影响，但 column_kind 只标注为 column",
+      "evidence_artifact": "results/reading_order.json"
+    }
+  ]
+}
